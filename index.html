@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PrecisionCare Clinic Laboratory - Accurate results. Faster answers. Better care.</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <nav>
+    <div class="nav-brand">PrecisionCare Clinic Laboratory</div>
+    <div class="nav-links">
+      <a href="#about">About</a>
+      <a href="#services">Services</a>
+      <a href="#contact">Contact</a>
+    </div>
+  </nav>
+
+  <section class="hero">
+    <div class="hero-content">
+      <h1>Accurate results. Faster answers. Better care.</h1>
+      <p>PrecisionCare Clinic Laboratory delivers reliable diagnostic testing with speed, accuracy, and compassion. From routine screenings to specialized panels, our certified team helps patients and clinicians make confident decisions. Convenient scheduling and clear reporting keep your care moving forward.</p>
+      <a href="#contact" class="btn btn-primary">Get Started</a>
+    </div>
+  </section>
+
+  <section id="about" class="section container text-center">
+    <div style="max-width: 800px; margin: 0 auto;">
+      <h2 class="mb-8" style="font-size: 2.25rem;">Trusted Diagnostics for Every Step of Care</h2>
+      <p class="text-slate-600" style="font-size: 1.125rem;">PrecisionCare Clinic Laboratory exists to make high-quality testing accessible, timely, and easy to understand. We combine rigorous quality controls with modern analyzers to produce dependable results clinicians can trust. Our patient-first approach prioritizes comfort, privacy, and transparent communication at every visit. Built on a foundation of clinical excellence and continuous improvement, we support healthier outcomes across our community.</p>
+    </div>
+  </section>
+
+  <section id="services" class="section bg-slate-50">
+    <div class="container">
+      <h2 class="text-center mb-12" style="font-size: 2.25rem;">Our Services</h2>
+      <div class="grid-3">
+        
+        <div class="card">
+          <div class="card-icon">check</div>
+          <h3 class="mb-4" style="font-size: 1.25rem;">Routine Blood & Chemistry Panels</h3>
+          <p class="text-slate-600">Comprehensive CBC, metabolic panels, lipid profiles, and more for ongoing health monitoring.</p>
+        </div>
+        
+
+        <div class="card">
+          <div class="card-icon">shield</div>
+          <h3 class="mb-4" style="font-size: 1.25rem;">Infectious Disease Testing</h3>
+          <p class="text-slate-600">Accurate testing for common and emerging infections with prompt, actionable reporting.</p>
+        </div>
+        
+
+        <div class="card">
+          <div class="card-icon">tool</div>
+          <h3 class="mb-4" style="font-size: 1.25rem;">Urinalysis & Kidney Health Screening</h3>
+          <p class="text-slate-600">Fast, reliable urine testing to support preventive care and chronic condition management.</p>
+        </div>
+        
+
+        <div class="card">
+          <div class="card-icon">heart</div>
+          <h3 class="mb-4" style="font-size: 1.25rem;">Hormone & Wellness Panels</h3>
+          <p class="text-slate-600">Targeted testing for thyroid, fertility, and wellness markers to guide personalized care.</p>
+        </div>
+        
+
+        <div class="card">
+          <div class="card-icon">briefcase</div>
+          <h3 class="mb-4" style="font-size: 1.25rem;">Employer & Pre-Procedure Testing</h3>
+          <p class="text-slate-600">Efficient screening services with clear documentation for workplace and clinical requirements.</p>
+        </div>
+        
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="section container">
+    <div class="grid-2">
+      <div>
+        <h2 class="mb-4" style="font-size: 2.25rem;">Get in Touch</h2>
+        <p class="text-slate-600 mb-8">Ready to start your project? We'd love to hear from you.</p>
+        
+        <div class="mb-4">
+          <strong>Email</strong>
+          <p class="text-slate-600">contact@precisioncarecliniclab.com</p>
+        </div>
+        <div class="mb-4">
+          <strong>Phone</strong>
+          <p class="text-slate-600">+1 (555) 000-0000</p>
+        </div>
+        <div class="mb-4">
+          <strong>Address</strong>
+          <p class="text-slate-600">123 Main St, City, State 00000</p>
+        </div>
+      </div>
+
+      <div class="card">
+        <form id="contactForm">
+          <div class="form-group">
+            <label class="form-label">Name</label>
+            <input type="text" name="name" required class="form-input">
+          </div>
+          <div class="form-group">
+            <label class="form-label">Email</label>
+            <input type="email" name="email" required class="form-input">
+          </div>
+          <div class="form-group">
+            <label class="form-label">Message</label>
+            <textarea name="message" required class="form-input" rows="4"></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary" style="width: 100%;">Send Message</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2026 PrecisionCare Clinic Laboratory. All rights reserved.</p>
+  </footer>
+
+  <script>
+    document.getElementById('contactForm').addEventListener('submit', function(e) {
+      e.preventDefault();
+      alert('Thank you for your message! This is a static demo.');
+      this.reset();
+    });
+  </script>
+</body>
+</html>
