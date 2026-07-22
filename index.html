@@ -1,129 +1,438 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>PrecisionCare Clinic Laboratory - Accurate results. Faster answers. Better care.</title>
-  <link rel="stylesheet" href="styles.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Luxury Jewellery</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+
+body{
+font-family:'Poppins',sans-serif;
+background:#0b0b0b;
+color:#fff;
+overflow-x:hidden;
+}
+
+html{
+scroll-behavior:smooth;
+}
+
+/* NAVBAR */
+
+.navbar{
+position:fixed;
+top:0;
+width:100%;
+padding:20px 8%;
+display:flex;
+justify-content:space-between;
+align-items:center;
+background:rgba(0,0,0,.8);
+backdrop-filter:blur(10px);
+z-index:1000;
+}
+
+.logo{
+font-family:'Cormorant Garamond',serif;
+font-size:34px;
+font-weight:700;
+color:#d4af37;
+letter-spacing:2px;
+}
+
+.nav-links{
+display:flex;
+gap:35px;
+}
+
+.nav-links a{
+text-decoration:none;
+color:white;
+font-weight:500;
+transition:.3s;
+}
+
+.nav-links a:hover{
+color:#d4af37;
+}
+
+/* HERO */
+
+.hero{
+height:100vh;
+background:
+linear-gradient(rgba(0,0,0,.45),rgba(0,0,0,.45)),
+url('https://images.unsplash.com/photo-1617038260897-41a1f14a8ca0?q=80&w=1600');
+background-size:cover;
+background-position:center;
+display:flex;
+align-items:center;
+padding:0 8%;
+}
+
+.hero-content{
+max-width:700px;
+}
+
+.hero-content h1{
+font-family:'Cormorant Garamond',serif;
+font-size:78px;
+line-height:1;
+margin-bottom:25px;
+}
+
+.hero-content p{
+font-size:18px;
+line-height:1.8;
+color:#ddd;
+margin-bottom:35px;
+}
+
+.btn{
+display:inline-block;
+padding:16px 35px;
+background:#d4af37;
+color:#000;
+text-decoration:none;
+font-weight:600;
+border-radius:50px;
+transition:.3s;
+}
+
+.btn:hover{
+transform:translateY(-3px);
+}
+
+/* SECTION */
+
+.section{
+padding:100px 8%;
+}
+
+.section-title{
+text-align:center;
+margin-bottom:60px;
+}
+
+.section-title h2{
+font-family:'Cormorant Garamond',serif;
+font-size:56px;
+color:#d4af37;
+margin-bottom:10px;
+}
+
+.section-title p{
+color:#bbb;
+}
+
+/* COLLECTIONS */
+
+.grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+gap:30px;
+}
+
+.card{
+background:#141414;
+border:1px solid rgba(212,175,55,.2);
+border-radius:20px;
+overflow:hidden;
+transition:.4s;
+}
+
+.card:hover{
+transform:translateY(-10px);
+}
+
+.card img{
+width:100%;
+height:320px;
+object-fit:cover;
+}
+
+.card-content{
+padding:25px;
+}
+
+.card-content h3{
+font-family:'Cormorant Garamond',serif;
+font-size:32px;
+margin-bottom:10px;
+}
+
+.card-content p{
+color:#bbb;
+line-height:1.7;
+}
+
+/* WHY US */
+
+.features{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:25px;
+}
+
+.feature{
+background:#141414;
+padding:35px;
+border-radius:20px;
+text-align:center;
+}
+
+.feature h3{
+color:#d4af37;
+margin-bottom:15px;
+}
+
+/* TESTIMONIALS */
+
+.testimonial{
+background:#141414;
+padding:35px;
+border-radius:20px;
+}
+
+.testimonial p{
+color:#ddd;
+line-height:1.8;
+margin-bottom:15px;
+}
+
+.testimonial h4{
+color:#d4af37;
+}
+
+/* CONTACT */
+
+.contact{
+background:#111;
+border-radius:25px;
+padding:50px;
+text-align:center;
+}
+
+.contact h2{
+font-family:'Cormorant Garamond',serif;
+font-size:52px;
+margin-bottom:20px;
+color:#d4af37;
+}
+
+.contact p{
+margin-bottom:30px;
+color:#ccc;
+}
+
+/* WHATSAPP */
+
+.whatsapp{
+position:fixed;
+bottom:25px;
+right:25px;
+background:#25D366;
+width:65px;
+height:65px;
+border-radius:50%;
+display:flex;
+justify-content:center;
+align-items:center;
+text-decoration:none;
+font-size:28px;
+color:white;
+box-shadow:0 10px 25px rgba(0,0,0,.4);
+}
+
+/* FOOTER */
+
+footer{
+padding:30px;
+text-align:center;
+border-top:1px solid rgba(255,255,255,.1);
+color:#888;
+}
+
+@media(max-width:768px){
+
+.hero-content h1{
+font-size:52px;
+}
+
+.nav-links{
+display:none;
+}
+
+.section-title h2{
+font-size:40px;
+}
+
+}
+
+</style>
 </head>
 <body>
-  <nav>
-    <div class="nav-brand">PrecisionCare Clinic Laboratory</div>
-    <div class="nav-links">
-      <a href="#about">About</a>
-      <a href="#services">Services</a>
-      <a href="#contact">Contact</a>
-    </div>
-  </nav>
 
-  <section class="hero">
-    <div class="hero-content">
-      <h1>Accurate results. Faster answers. Better care.</h1>
-      <p>PrecisionCare Clinic Laboratory delivers reliable diagnostic testing with speed, accuracy, and compassion. From routine screenings to specialized panels, our certified team helps patients and clinicians make confident decisions. Convenient scheduling and clear reporting keep your care moving forward.</p>
-      <a href="#contact" class="btn btn-primary">Get Started</a>
-    </div>
-  </section>
+<nav class="navbar">
+<div class="logo">LUXORA</div>
 
-  <section id="about" class="section container text-center">
-    <div style="max-width: 800px; margin: 0 auto;">
-      <h2 class="mb-8" style="font-size: 2.25rem;">Trusted Diagnostics for Every Step of Care</h2>
-      <p class="text-slate-600" style="font-size: 1.125rem;">PrecisionCare Clinic Laboratory exists to make high-quality testing accessible, timely, and easy to understand. We combine rigorous quality controls with modern analyzers to produce dependable results clinicians can trust. Our patient-first approach prioritizes comfort, privacy, and transparent communication at every visit. Built on a foundation of clinical excellence and continuous improvement, we support healthier outcomes across our community.</p>
-    </div>
-  </section>
+<div class="nav-links">
+<a href="#">Home</a>
+<a href="#">Collections</a>
+<a href="#">About</a>
+<a href="#">Reviews</a>
+<a href="#">Contact</a>
+</div>
+</nav>
 
-  <section id="services" class="section bg-slate-50">
-    <div class="container">
-      <h2 class="text-center mb-12" style="font-size: 2.25rem;">Our Services</h2>
-      <div class="grid-3">
-        
-        <div class="card">
-          <div class="card-icon">check</div>
-          <h3 class="mb-4" style="font-size: 1.25rem;">Routine Blood & Chemistry Panels</h3>
-          <p class="text-slate-600">Comprehensive CBC, metabolic panels, lipid profiles, and more for ongoing health monitoring.</p>
-        </div>
-        
+<section class="hero">
+<div class="hero-content">
+<h1>Timeless Jewellery For Every Moment</h1>
 
-        <div class="card">
-          <div class="card-icon">shield</div>
-          <h3 class="mb-4" style="font-size: 1.25rem;">Infectious Disease Testing</h3>
-          <p class="text-slate-600">Accurate testing for common and emerging infections with prompt, actionable reporting.</p>
-        </div>
-        
+<p>
+Discover handcrafted gold, diamond and bridal jewellery
+designed with elegance, luxury and unmatched craftsmanship.
+</p>
 
-        <div class="card">
-          <div class="card-icon">tool</div>
-          <h3 class="mb-4" style="font-size: 1.25rem;">Urinalysis & Kidney Health Screening</h3>
-          <p class="text-slate-600">Fast, reliable urine testing to support preventive care and chronic condition management.</p>
-        </div>
-        
+<a href="#" class="btn">Explore Collection</a>
+</div>
+</section>
 
-        <div class="card">
-          <div class="card-icon">heart</div>
-          <h3 class="mb-4" style="font-size: 1.25rem;">Hormone & Wellness Panels</h3>
-          <p class="text-slate-600">Targeted testing for thyroid, fertility, and wellness markers to guide personalized care.</p>
-        </div>
-        
+<section class="section">
 
-        <div class="card">
-          <div class="card-icon">briefcase</div>
-          <h3 class="mb-4" style="font-size: 1.25rem;">Employer & Pre-Procedure Testing</h3>
-          <p class="text-slate-600">Efficient screening services with clear documentation for workplace and clinical requirements.</p>
-        </div>
-        
-      </div>
-    </div>
-  </section>
+<div class="section-title">
+<h2>Featured Collections</h2>
+<p>Luxury crafted to perfection</p>
+</div>
 
-  <section id="contact" class="section container">
-    <div class="grid-2">
-      <div>
-        <h2 class="mb-4" style="font-size: 2.25rem;">Get in Touch</h2>
-        <p class="text-slate-600 mb-8">Ready to start your project? We'd love to hear from you.</p>
-        
-        <div class="mb-4">
-          <strong>Email</strong>
-          <p class="text-slate-600">contact@precisioncarecliniclab.com</p>
-        </div>
-        <div class="mb-4">
-          <strong>Phone</strong>
-          <p class="text-slate-600">+1 (555) 000-0000</p>
-        </div>
-        <div class="mb-4">
-          <strong>Address</strong>
-          <p class="text-slate-600">123 Main St, City, State 00000</p>
-        </div>
-      </div>
+<div class="grid">
 
-      <div class="card">
-        <form id="contactForm">
-          <div class="form-group">
-            <label class="form-label">Name</label>
-            <input type="text" name="name" required class="form-input">
-          </div>
-          <div class="form-group">
-            <label class="form-label">Email</label>
-            <input type="email" name="email" required class="form-input">
-          </div>
-          <div class="form-group">
-            <label class="form-label">Message</label>
-            <textarea name="message" required class="form-input" rows="4"></textarea>
-          </div>
-          <button type="submit" class="btn btn-primary" style="width: 100%;">Send Message</button>
-        </form>
-      </div>
-    </div>
-  </section>
+<div class="card">
+<img src="https://images.unsplash.com/photo-1611085583191-a3b181a88401?q=80&w=1200">
+<div class="card-content">
+<h3>Diamond Rings</h3>
+<p>Elegant designs crafted with premium diamonds.</p>
+</div>
+</div>
 
-  <footer>
-    <p>&copy; 2026 PrecisionCare Clinic Laboratory. All rights reserved.</p>
-  </footer>
+<div class="card">
+<img src="https://images.unsplash.com/photo-1599643478518-a784e5dc4c8f?q=80&w=1200">
+<div class="card-content">
+<h3>Gold Necklaces</h3>
+<p>Luxury gold collections for every occasion.</p>
+</div>
+</div>
 
-  <script>
-    document.getElementById('contactForm').addEventListener('submit', function(e) {
-      e.preventDefault();
-      alert('Thank you for your message! This is a static demo.');
-      this.reset();
-    });
-  </script>
+<div class="card">
+<img src="https://images.unsplash.com/photo-1611652022419-a9419f74343d?q=80&w=1200">
+<div class="card-content">
+<h3>Bridal Collection</h3>
+<p>Celebrate your special moments with timeless jewellery.</p>
+</div>
+</div>
+
+</div>
+
+</section>
+
+<section class="section">
+
+<div class="section-title">
+<h2>Why Choose Us</h2>
+</div>
+
+<div class="features">
+
+<div class="feature">
+<h3>Certified Diamonds</h3>
+<p>Every diamond comes with authenticity certification.</p>
+</div>
+
+<div class="feature">
+<h3>Premium Craftsmanship</h3>
+<p>Designed by expert artisans with decades of experience.</p>
+</div>
+
+<div class="feature">
+<h3>Lifetime Support</h3>
+<p>Cleaning, polishing and jewellery care assistance.</p>
+</div>
+
+</div>
+
+</section>
+
+<section class="section">
+
+<div class="section-title">
+<h2>Customer Reviews</h2>
+</div>
+
+<div class="grid">
+
+<div class="testimonial">
+<p>
+★★★★★
+Amazing collection and premium quality jewellery.
+</p>
+<h4>Priya Sharma</h4>
+</div>
+
+<div class="testimonial">
+<p>
+★★★★★
+Beautiful craftsmanship and excellent customer service.
+</p>
+<h4>Rohan Mehta</h4>
+</div>
+
+<div class="testimonial">
+<p>
+★★★★★
+Elegant designs and luxury shopping experience.
+</p>
+<h4>Ananya Kapoor</h4>
+</div>
+
+</div>
+
+</section>
+
+<section class="section">
+
+<div class="contact">
+
+<h2>Visit Our Showroom</h2>
+
+<p>
+Explore our exclusive collections and experience luxury jewellery like never before.
+</p>
+
+<a href="#" class="btn">
+Book Appointment
+</a>
+
+</div>
+
+</section>
+
+<a href="https://wa.me/919999999999" class="whatsapp">
+✆
+</a>
+
+<footer>
+© 2026 Luxora Jewellery. All Rights Reserved.
+</footer>
+
 </body>
 </html>
